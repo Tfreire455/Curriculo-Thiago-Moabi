@@ -1,0 +1,50 @@
+.portfolio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.artigos-portfolio {
+
+    margin: 6% 2%;
+    overflow: hidden;
+
+}
+
+.jogo:hover {
+
+    overflow: hidden;
+
+}
+
+.site-alurabook {
+
+    overflow: hidden;
+    width: 1024px;
+    height: 780px;
+
+}
+
+.texto-portfolio {
+
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    margin: 5%;
+    padding: 07px;
+    width: 50%;
+    left: 50%;
+    border-radius: 16px;
+    border: 3px var(--cor-terciaria) solid;
+    color: var(--cor-terciaria);
+}
+
+.site-adivinha-numero {
+
+    overflow: hidden;
+    width: 1024px;
+    height: 780px;
+
+}

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Black+Ops+One&family=Bungee&family=Bungee+Shade&family=Creepster&family=Eczar&family=Ewert&family=Fruktur&family=Gravitas+One&family=Krona+One&family=Monoton&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&family=Oswald:wght@200;300;400&family=Roboto+Condensed:ital,wght@0,700;1,400&family=Rubik:wght@900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=IBM+Plex+Mono:wght@300&display=swap');
+
+@import url(./botoes-secao.css);
+@import url(../acordeon.js);
+@import url(jogo.css);
+@import url(portfolio.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #191919;
+    --cor-secundaria: white;
+    --cor-terciaria: rgb(28, 116, 116);
+    --cor-hover: rgb(cyan);
+
+    --fonte-primaria: 'Space mono', monospace;
+    --fonte-secundaria: 'IBM Plex mono', monospace;
+    --fonte-terciaria: 'Fira Mono', monospace;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Pagina Principal*/
+.cabecalho {
+    padding: 30px 10px 0px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    padding: 16px;
+    gap: 30px;
+}
+
+.cabecalho__menu__link {
+    border: solid 4px var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    padding: 10px 26px 10px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    -moz-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    transition: 2s;
+}
+
+.cabecalho__menu__link:hover {
+    border-color: cyan;
+    background: #363f41;
+    transition: 2s;
+    transform: scale(1.2);
+
+}
+
+.centropag {
+    display: flex;
+    justify-content: center;
+    padding: 10% 5% 20% 5%;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.apresentacao {
+    flex-direction: column;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    line-height: 35px;
+    gap: 40px;
+}
+
+.nome-da-pagina-inicial {
+    gap: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.apresentacao_nome {
+    font-family: var(--fonte-primaria);
+    font-size: 4.6rem;
+    letter-spacing: -08px;
+    word-spacing: -25px;
+    line-height: 100px;
+
+}
+
+.nome-destaque {
+    font-family: var(--fonte-primaria);
+    font-size: 4.8rem;
+    letter-spacing: -08px;
+    word-spacing: -25px;
+    line-height: 100px;
+    padding: 07px;
+    border-radius: 16px;
+    border: 3px var(--cor-terciaria) solid;
+    color: var(--cor-terciaria);
+}
+
+.nome-destaque:hover {
+    color: cyan;
+    border-color: cyan;
+    background: var(--cor-primaria);
+}
+
+.apresentacao_titulo {
+    padding: 20px 0px 0px 0px;
+    font-family: var(--fonte-secundaria);
+    font-size: 2.1rem;
+    letter-spacing: -01px;
+    word-spacing: -10px;
+}
+
+.corpo-texto {
+    font-family: var(--fonte-terciaria);
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.minhafoto {
+    width: 25%;
+}
+
+.rodape {
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    padding: 20px;
+    display: flex;
+    background-color: var(--cor-terciaria);
+    font-weight: 600px;
+    position: static;
+    width: auto;
+    bottom: 100%;
+    position: static;
+    top: 10%;
+}
+
+/*Minhas Redes*/
+.apresentacao-redes {
+    padding: 15% 15% 20%;
+    align-content: center;
+}
+
+.rede {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.rede-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.rede-social-nome {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    border: solid 3px var(--cor-terciaria);
+    padding: 16px 25px 16px 25px;
+    border-radius: 16px;
+
+}
+
+.rede-social-nome:hover {
+    color: cyan;
+    border-color: cyan;
+    background: #363f41;
+}
+
+.rede-social-imagem {
+    height: 15.6rem;
+}
+
+/*Curriculo*/
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 01% 5% 15% 5%;
+    gap: 30px;
+}
+
+.apresentacao-nome-curriculo {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    font-size: 4.6rem;
+    letter-spacing: -08px;
+    word-spacing: -25px;
+    line-height: 100px;
+}
+
+.dados-pessoais {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+
+.titulos-das-informacoes {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.1rem;
+    letter-spacing: -01px;
+    word-spacing: -10px;
+}
+
+.paragrafos-informacoes {
+    font-family: var(--fonte-terciaria);
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.subtitulo-informacoes {
+    font-family: var(--fonte-terciaria);
+    padding-top: 20px;
+    line-height: 20px;
+    margin: 2%;
+}
+
+.sub-subtitulo-informacoes {
+    font-family: var(--fonte-terciaria);
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+
+.funcoes {
+    font-family: var(--fonte-terciaria);
+    padding: 10px;
+    line-height: 20px;
+    list-style: circle;
+}
+
+.funcoes li {
+    padding: 05px;
+}
+
+.paragrafos-contato {
+    display: flex;
+    justify-content: flex-start;
+    font-family: var(--fonte-terciaria);
+    font-weight: 400;
+    padding: 20px 0px 20px 20px;
+}
+
+.subfuncoes {
+    font-family: var(--fonte-terciaria);
+    padding: 10px;
+    line-height: 20px;
+    list-style: circle;
+}
+
+.funcoes__container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+/*Portfolio -- jogo*/
+.jogo {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0% 0%;
+    overflow: hidden;
+}
+
+.jogo-e-nome {
+
+    display: flex;
+    margin: 1%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (max-width: 780px) {
+
+    .centropag {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .apresentacao {
+        align-items: center;
+        padding: 5%;
+
+    }
+
+}
+
+@media (max-width: 1260px) {
+
+    .cabecalho {
+        text-align: center;
+    }
+
+    .cabecalho__menu {
+        justify-content: baseline;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .cabecalho__menu__link {
+        width: 20%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .nome-da-pagina-inicial {
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width: 1440px) {
+
+    .rede {
+
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rede-social {
+        gap: 0px;
+    }
+
+    .rede-social-imagem {
+        height: 10rem;
+    }
+
+
+}

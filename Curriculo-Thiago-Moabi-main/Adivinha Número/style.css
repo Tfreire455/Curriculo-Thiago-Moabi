@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    height: 90%;
+}
+
+.titulo {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 6%;
+    font-size: 4em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkcyan;
+    transition: 2s;
+
+}
+
+.titulo:hover {
+    transition: 2s;
+    scale: 1.1;
+    padding: 16px;
+    color: aquamarine;
+}
+
+.main {
+    font-size: 1.15em;
+    justify-content: center;
+    display: grid;
+    grid-auto-rows: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    gap: 18px;
+}
+
+button {
+    font-size: 1rem;
+    color: white;
+    background: transparent;
+    border-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover { opacity: 0.6;}
+
+input {
+    font-size: 1rem;
+    padding: 16px;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.hidden{ display: none;}
+
+

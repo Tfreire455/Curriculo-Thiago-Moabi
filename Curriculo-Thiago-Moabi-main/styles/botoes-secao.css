@@ -1,0 +1,117 @@
+.botao-acordeon {
+
+    background-color: var(--cor-terciaria);
+    padding: 2%;
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    -moz-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    transition: 1s;
+
+}
+
+.painel {
+
+    background-color: #121212;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden scroll;
+    transition: max-height 1s ease-out;
+    margin: 1px;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    -moz-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+
+}
+
+
+/* barra de rolagem */
+.painel::-webkit-scrollbar {
+    background-color: #121212;
+}
+
+.painel::-webkit-scrollbar-corner {
+    background-color: #121212;
+}
+
+.painel::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+.selecionado,
+.botao-acordeon:hover {
+
+    transform: scale(0.95);
+    background-color: rgb(0, 189, 189);
+    transition: 1s;
+    overflow: hidden;
+
+}
+
+
+
+
+.painel-jogo {
+
+    background-color: #121212;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    -moz-box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+    margin: 0.10%;
+
+
+}
+
+.subtitulo-informacoes-jogo {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fonte-terciaria);
+    margin: 4%;
+    padding: 5% 5%;
+    border: solid 4px var(--cor-terciaria);
+
+}
+
+.titulo-jogo:hover {
+
+    
+    overflow: hidden;
+
+
+}
+
+
+.titulo-jogo {
+
+    width: 80%;
+
+}
+
+.painel-alura {
+
+    overflow: hidden;
+
+}
+
+.link-alurabook {
+
+    text-decoration: none;
+
+}

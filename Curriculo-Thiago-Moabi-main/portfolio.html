@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Início</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="Certificados.html">Certificados</a>
+            <a class="cabecalho__menu__link" href="portfolio.html">Portfolio</a>
+            <a class="cabecalho__menu__link" href="minhasRedes.html">Minhas Redes</a>
+        </nav>
+    </header>
+
+    <main class="portfolio">
+
+        <h1 class="texto-portfolio">Seja muito bem-vindo(a) à minha página de portfolio!</h1>
+
+        <article class="artigos-portfolio">
+
+            <section class="secao-jogos">
+                <div class="jogo-e-nome">
+                    <button class="titulo-jogo  titulos-das-informacoes botao-acordeon">Jogo da vaquinha</button>
+                    <div class="painel-jogo">
+                        <object class="jogo" data="jogo/jogo.html"
+                            type=""></object>
+                        <p class="subtitulo-informacoes-jogo">
+                            Jogo criado através do curso Lógica de programação:
+                            <br>laços e listas com JavaScript da Alura!
+                            <br>Site: <a class="link-alurabook cabecalho__menu__link" href="./jogo/jogo.html">Jogo da vaquinha</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao-jogos">
+                <div class="jogo-e-nome">
+                    <button class="titulo-jogo  titulos-das-informacoes botao-acordeon">Alurabook</button>
+                    <div class="painel-jogo">
+                        <object class="site-alurabook" data="https://tfreire455.github.io/Alurabook-responsivo/" type=""></object>
+                        <p class="subtitulo-informacoes-jogo">
+                            Site<a class="link-alurabook cabecalho__menu__link" href="https://tfreire455.github.io/Alurabook-responsivo/">Alurabook</a>, projeto
+                            responsivo
+                            da Alura!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao-jogos">
+                <div class="jogo-e-nome">
+                    <button class="titulo-jogo  titulos-das-informacoes botao-acordeon">Adivinhe o número</button>
+                    <div class="painel-jogo">
+                        <object class="site-adivinha-numero" data="./Adivinha Número/index.html" type=""></object>
+                        <p class="subtitulo-informacoes-jogo">
+                            Site<a class="link-alurabook cabecalho__menu__link" href="./Adivinha Número/index.html">Adivinhe o número</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por: <strong>Thiago Moabi de Souza Freire</strong>
+        </p>
+    </footer>
+
+    <script id="Acordeon-menu">
+        const acordeonArray = document.getElementsByClassName('botao-acordeon');
+        for (var i = 0; i < acordeonArray.length; i++) {
+            acordeonArray[i].addEventListener("click", function () {
+                this.classList.toggle("selecionado");
+                const painel = this.nextElementSibling;
+                if (painel.style.maxHeight) {
+                    painel.style.maxHeight = null;
+                }
+                else {
+                    painel.style.maxHeight = painel.scrollHeight + "px";
+                }
+            })
+        };
+
+    </script>
+</body>
+
+</html>

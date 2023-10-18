@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha número</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="../index.html">Início</a>
+            <a class="cabecalho__menu__link" href="../curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="../Certificados.html">Certificados</a>
+            <a class="cabecalho__menu__link" href="../portfolio.html">Portfolio</a>
+            <a class="cabecalho__menu__link" href="../minhasRedes.html">Minhas Redes</a>
+        </nav>
+    </header>
+
+
+    <div class="titulo">Adivinhe o número</div>
+
+    <div class="main">
+        <div>Adivinhe um número de <span id="minNumber"></span> a <span id="maxNumber"></span></div>
+        <div> tentativas restantes: <span id="guessesRemaining"></span> </div>
+
+        <input type="number" id="userNumber">
+        <button id="checked">Adivinhe</button>
+        <button id="reset">Reiniciar</button>
+
+        <div id="tip"></div>
+    </div>
+    
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por: <strong>Thiago Moabi de Souza Freire</strong>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
