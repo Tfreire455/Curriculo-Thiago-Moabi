@@ -150,3 +150,38 @@ button:hover {
     transform: scale(1.2);
 
 }
+
+@media (max-width: 1260px) {
+
+    .cabecalho {
+        text-align: center;
+    }
+
+    .cabecalho__menu {
+        justify-content: baseline;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .cabecalho__menu__link {
+        width: 20%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: center;
+
+    }}
+
+    @media (max-width: 780px) {
+
+        .game-body {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+        }
+    
+    
+    }
+    
+
