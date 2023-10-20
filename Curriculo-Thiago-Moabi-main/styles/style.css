@@ -297,7 +297,109 @@ body {
 
 }
 
+#menu-check {
+    display: none;
+    color: aqua;
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+label {
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    height: 22px;
+    width: 30px;
+}
+
+.menu-hamburguer {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background:var(--cor-terciaria);
+    transition: 0.25s ease-in-out;
+
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+
+
+@media (max-width: 320px) {
+
+    #menu-check {
+        justify-content: center;
+    }
+
+
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        height: 10%;
+        font-size: 8px;
+        padding: 10px;
+
+    }
+
+    .cabecalho__menu__link {
+
+        width: 50%;
+        height: 10%;
+        font-size: 16px;
+        padding: 8px;
+        margin: 1px;
+        transform: scale(0.8);
+    }
+
+}
+
 @media (max-width: 780px) {
+
+
+    .cabecalho__menu {
+        flex-direction: column;
+    }
+
+    .cabecalho__menu__link {
+
+        width: 50%;
+        height: 10%;
+        font-size: 16px;
+        padding: 8px;
+        margin: 1px;
+        transform: scale(1.0);
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
 
     .centropag {
         flex-direction: column-reverse;
@@ -311,18 +413,28 @@ body {
 
     }
 
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
 }
+
 
 @media (max-width: 1260px) {
 
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
+
     .cabecalho {
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
         text-align: center;
     }
 
     .cabecalho__menu {
         justify-content: baseline;
         text-align: center;
-        flex-direction: column-reverse;
         align-items: center;
         gap: 5px;
     }
@@ -334,7 +446,7 @@ body {
         justify-content: center;
 
     }
-
+    
     .nome-da-pagina-inicial {
         flex-direction: column;
 
@@ -343,6 +455,16 @@ body {
 }
 
 @media (max-width: 1440px) {
+
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
 
     .rede {
 
