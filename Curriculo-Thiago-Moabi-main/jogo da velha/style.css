@@ -21,11 +21,14 @@
 
 html,
 body {
+    align-items: center;
+    width: 100%;
     background: radial-gradient(circle, cyan 0%, rgb(28, 116, 116) 35%, rgb(13, 55, 55) 75%, #191919 100%);
     height: 91%;
 }
 
 body {
+    width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,6 +53,10 @@ button:hover {
 }
 
 .game-over-message {
+
+    justify-content: center;
+    display: flex;
+    text-align: center;
 
     padding: 2em 4em;
     font-size: 1.2em;
@@ -171,21 +178,22 @@ button:hover {
         display: flex;
         justify-content: center;
 
-    }}
-
-    @media (max-width: 780px) {
-
-        .game-body {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-content: center;
-        }
-    
-    
     }
-    
-    @media (max-width: 520px) {
-    .board{
+}
+
+@media (max-width: 780px) {
+
+    .game-body {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+}
+
+@media (max-width: 520px) {
+    .board {
         width: 20rem;
         height: 20rem;
     }
@@ -198,22 +206,183 @@ button:hover {
 
     }
 
+}
+
+@media (max-width: 320px) {
+    .board {
+        width: 15rem;
+        height: 15rem;
     }
 
-    @media (max-width: 320px) {
-        .board{
-            width: 15rem;
-            height: 15rem;
-        }
+    #menu-check {
+        justify-content: center;
+    }
+
+
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        height: 10%;
+        font-size: 8px;
+        padding: 10px;
+
+    }
+
+}
+
+#menu-check {
+    display: none;
+    color: aqua;
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+label {
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    height: 22px;
+    width: 30px;
+}
+
+.menu-hamburguer {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background:var(--cor-terciaria);
+    transition: 0.25s ease-in-out;
+
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+
+@media (max-width: 780px) {
+
+
+    .cabecalho__menu {
+        flex-direction: column;
+    }
+
+    .cabecalho__menu__link {
+
+        width: 50%;
+        height: 10%;
+        font-size: 16px;
+        padding: 8px;
+        margin: 1px;
+        transform: scale(1.0);
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .centropag {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .apresentacao {
+        align-items: center;
+        padding: 5%;
+
+    }
+
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 1260px) {
+
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
+
+    .cabecalho {
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .cabecalho__menu {
+        justify-content: baseline;
+        text-align: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .cabecalho__menu__link {
+        width: 20%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: center;
+
+    }
     
-        .cabecalho__menu__link {
-            width: 10%;
-            font-size: 10px;
-            padding: 10px 50px;
-            display: flex;
-            justify-content: center;
-    
-        }
-    
-        }
-    
+    .nome-da-pagina-inicial {
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width: 1440px) {
+
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-check:checked~.cabecalho__menu {
+        display: flex;
+    }
+
+    .rede {
+
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rede-social {
+        gap: 0px;
+    }
+
+    .rede-social-imagem {
+        height: 10rem;
+    }
+
+
+}
