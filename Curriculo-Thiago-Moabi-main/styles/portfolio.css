@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    width: 100%;
+}
+
 .portfolio {
     align-items: center;
     display: flex;
@@ -47,4 +52,131 @@
     width: 1024px;
     height: 780px;
 
+}
+
+@media (max-width: 320px) {
+
+    .texto-portfolio {
+        font-size: 1em;
+    }
+
+    .subtitulo-informacoes-jogo {
+        width: 80%;
+        font-size: 0.5em;
+    }
+
+    .links {
+        width: 50%;
+        text-decoration: none;
+        color: white;
+        border: solid var(--cor-terciaria);
+        border-radius: 8px;
+        padding: 4px;
+        margin: 5px;
+    }
+
+    .links:hover {
+    transform: scale(0.95);
+    background-color: rgb(0, 189, 189);
+    transition: 1s;
+    overflow: hidden;
+
+    }
+
+    
+}
+
+@media (max-width: 720px) {
+
+    .jogo-e-nome{
+
+        margin: 5%;
+    }
+
+    .subtitulo-informacoes-jogo {
+        width: 80%;
+        font-size: 0.85em;
+    }
+
+    
+    .links {
+        width: 30%;
+        text-decoration: none;
+        color: white;
+        border: solid var(--cor-terciaria);
+        border-radius: 8px;
+        padding: 4px;
+        margin: 5px;
+    }
+
+    .links:hover {
+        transform: scale(0.95);
+        background-color: rgb(0, 189, 189);
+        transition: 1s;
+        overflow: hidden;
+    
+        }
+
+}
+
+@media (max-width: 1220px) {
+
+    .jogo-e-nome{
+
+        margin: 5%;
+    }
+
+    .subtitulo-informacoes-jogo {
+        width: 80%;
+        font-size: 0.85em;
+    }
+
+    
+    .links {
+        width: 30%;
+        text-decoration: none;
+        color: white;
+        border: solid var(--cor-terciaria);
+        border-radius: 8px;
+        padding: 4px;
+        margin: 5px;
+    }
+    .links:hover {
+        transform: scale(0.95);
+        background-color: rgb(0, 189, 189);
+        transition: 1s;
+        overflow: hidden;
+    
+        }
+}
+
+@media (max-width: 1440px) {
+
+    .jogo-e-nome{
+
+        margin: 5%;
+    }
+
+    .subtitulo-informacoes-jogo {
+        width: 80%;
+        font-size: 0.85em;
+    }
+
+    
+    .links {
+        width: 30%;
+        text-decoration: none;
+        color: white;
+        border: solid var(--cor-terciaria);
+        border-radius: 8px;
+        padding: 4px;
+        margin: 5px;
+    }
+    .links:hover {
+        transform: scale(0.95);
+        background-color: rgb(0, 189, 189);
+        transition: 1s;
+        overflow: hidden;
+    
+        }
 }
