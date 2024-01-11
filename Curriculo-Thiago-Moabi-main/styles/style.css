@@ -475,8 +475,11 @@ label span:nth-child(3) {
 
     .rede-social {
         gap: 8px;
-        padding: 20%;
     }
+
+    .rede-social-nome {
+        padding: 20px;
+    } 
 
     .rede-social-imagem {
         height: 2rem;
