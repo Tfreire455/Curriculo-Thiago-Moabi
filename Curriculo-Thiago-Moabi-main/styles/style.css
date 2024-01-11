@@ -23,13 +23,6 @@
     --fonte-terciaria: 'Fira Mono', monospace;
 }
 
-body {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    box-sizing: border-box;
-    height: auto;
-    overflow: auto;
-}
 
 /* Pagina Principal*/
 .cabecalho {
@@ -67,225 +60,8 @@ body {
 
 }
 
-.centropag {
-    display: flex;
-    justify-content: center;
-    padding: 10% 5% 20% 5%;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-}
-
-.apresentacao {
-    flex-direction: column;
-    display: flex;
-    padding: 20px 0px 20px 0px;
-    line-height: 35px;
-    gap: 40px;
-}
-
-.nome-da-pagina-inicial {
-    gap: 1px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.apresentacao_nome {
-    font-family: var(--fonte-primaria);
-    font-size: 4.6rem;
-    letter-spacing: -08px;
-    word-spacing: -25px;
-    line-height: 100px;
-
-}
-
-.nome-destaque {
-    font-family: var(--fonte-primaria);
-    font-size: 4.8rem;
-    letter-spacing: -08px;
-    word-spacing: -25px;
-    line-height: 100px;
-    padding: 06px;
-    border-radius: 16px;
-    border: 3px var(--cor-terciaria) solid;
-    color: var(--cor-terciaria);
-}
-
-.nome-destaque:hover {
-    color: cyan;
-    border-color: cyan;
-    background: var(--cor-primaria);
-}
-
-.apresentacao_titulo {
-    padding: 10px 0px 0px 0px;
-    font-family: var(--fonte-secundaria);
-    font-size: 2.1rem;
-    letter-spacing: -01px;
-    word-spacing: -10px;
-}
-
-.corpo-texto {
-    font-family: var(--fonte-terciaria);
-    padding-top: 20px;
-    line-height: 20px;
-}
-
 .minhafoto {
     width: 20%;
-}
-
-.rodape {
-    justify-content: center;
-    font-family: var(--fonte-secundaria);
-    padding: 20px;
-    display: flex;
-    background-color: var(--cor-terciaria);
-    font-weight: 600px;
-    position: static;
-    width: auto;
-    bottom: 100%;
-    position: static;
-    top: 10%;
-}
-
-/*Minhas Redes*/
-.apresentacao-redes {
-    padding: 15% 15% 20%;
-    align-content: center;
-}
-
-.rede {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.rede-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-decoration: none;
-}
-
-.rede-social-nome {
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-secundaria);
-    font-size: 1.5rem;
-    border: solid 3px var(--cor-terciaria);
-    padding: 16px 25px 16px 25px;
-    border-radius: 16px;
-
-}
-
-.rede-social-nome:hover {
-    color: cyan;
-    border-color: cyan;
-    background: #363f41;
-}
-
-.rede-social-imagem {
-    height: 15rem;
-}
-
-/*Curriculo*/
-
-.informacoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 01% 5% 15% 5%;
-    gap: 30px;
-}
-
-.apresentacao-nome-curriculo {
-    display: flex;
-    justify-content: center;
-    font-family: var(--fonte-primaria);
-    font-size: 4.6rem;
-    letter-spacing: -08px;
-    word-spacing: -25px;
-    line-height: 100px;
-}
-
-.dados-pessoais {
-    display: flex;
-    flex-direction: column;
-    line-height: 35px;
-}
-
-.titulos-das-informacoes {
-    font-family: var(--fonte-secundaria);
-    font-size: 2.1rem;
-    letter-spacing: -01px;
-    word-spacing: -10px;
-}
-
-.paragrafos-informacoes {
-    font-family: var(--fonte-terciaria);
-    padding-top: 20px;
-    line-height: 20px;
-}
-
-.subtitulo-informacoes {
-    font-family: var(--fonte-terciaria);
-    padding-top: 20px;
-    line-height: 20px;
-    margin: 2%;
-}
-
-.sub-subtitulo-informacoes {
-    font-family: var(--fonte-terciaria);
-    padding-top: 20px;
-    line-height: 20px;
-}
-
-
-.funcoes {
-    font-family: var(--fonte-terciaria);
-    padding: 10px;
-    line-height: 20px;
-    list-style: circle;
-}
-
-.funcoes li {
-    padding: 05px;
-}
-
-.paragrafos-contato {
-    display: flex;
-    justify-content: flex-start;
-    font-family: var(--fonte-terciaria);
-    font-weight: 400;
-    padding: 20px 0px 20px 20px;
-}
-
-.subfuncoes {
-    font-family: var(--fonte-terciaria);
-    padding: 10px;
-    line-height: 20px;
-    list-style: circle;
-}
-
-.funcoes__container {
-
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-
-}
-
-/*Portfolio -- jogo*/
-.jogo {
-
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0% 0%;
-    overflow: hidden;
 }
 
 .jogo-e-nome {
@@ -324,7 +100,7 @@ label {
     height: 5px;
     width: 100%;
     border-radius: 30px;
-    background:var(--cor-terciaria);
+    background: var(--cor-terciaria);
     transition: 0.25s ease-in-out;
 
 }
@@ -402,18 +178,6 @@ label span:nth-child(3) {
         text-align: center;
     }
 
-    .centropag {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .apresentacao {
-        align-items: center;
-        padding: 5%;
-
-    }
-
     #menu-check:checked~.cabecalho__menu {
         display: flex;
     }
@@ -447,11 +211,6 @@ label span:nth-child(3) {
         justify-content: center;
 
     }
-    
-    .nome-da-pagina-inicial {
-        flex-direction: column;
-
-    }
 
 }
 
@@ -466,25 +225,5 @@ label span:nth-child(3) {
     #menu-check:checked~.cabecalho__menu {
         display: flex;
     }
-
-    .rede {
-
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .rede-social {
-        gap: 8px;
-    }
-
-    .rede-social-nome {
-        padding: 20px;
-    } 
-
-    .rede-social-imagem {
-        height: 2rem;
-        width: 2rem;
-    }
-
 
 }
