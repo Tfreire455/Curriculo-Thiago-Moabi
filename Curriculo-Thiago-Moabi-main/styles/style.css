@@ -27,7 +27,7 @@ body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     box-sizing: border-box;
-    height: 100%;
+    height: auto;
     overflow: auto;
 }
 
@@ -85,10 +85,11 @@ body {
 }
 
 .nome-da-pagina-inicial {
-    gap: 15px;
+    gap: 1px;
     align-items: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .apresentacao_nome {
@@ -106,7 +107,7 @@ body {
     letter-spacing: -08px;
     word-spacing: -25px;
     line-height: 100px;
-    padding: 07px;
+    padding: 06px;
     border-radius: 16px;
     border: 3px var(--cor-terciaria) solid;
     color: var(--cor-terciaria);
@@ -119,7 +120,7 @@ body {
 }
 
 .apresentacao_titulo {
-    padding: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     font-family: var(--fonte-secundaria);
     font-size: 2.1rem;
     letter-spacing: -01px;
@@ -133,7 +134,7 @@ body {
 }
 
 .minhafoto {
-    width: 25%;
+    width: 20%;
 }
 
 .rodape {
@@ -187,7 +188,7 @@ body {
 }
 
 .rede-social-imagem {
-    height: 15.6rem;
+    height: 15rem;
 }
 
 /*Curriculo*/
@@ -477,7 +478,8 @@ label span:nth-child(3) {
     }
 
     .rede-social-imagem {
-        height: 10rem;
+        height: 2rem;
+        width: 2rem;
     }
 
 
